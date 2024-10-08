@@ -1,0 +1,12 @@
+<section>
+    <h1>The Evolution of Technology: <br>
+        From the Industrial Revolution to the Digital Future</h1>
+    <h3>A journey through the moments that transformed our society</h3>
+    <div id="timeLine">
+        <div id="line">
+            <div *ngFor="let event of events">
+                <app-event-card [event]="event"></app-event-card>
+            </div>
+        </div>
+    </div>
+</section>
