@@ -1,0 +1,43 @@
+.title{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+    >img{
+        width: 10%;
+    }
+}
+h1{
+    font-size: 3.5rem;
+    text-align: center;
+    color: #00B8D9;
+    text-shadow: 2px 2px 2px #452c61;
+}
+.content{
+    width: 70%;
+    margin: 0 auto 20px;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    >img{
+        width: 15%;
+    }
+}
+@media screen and (max-width: 500px){
+    .title{
+        width: 80%;
+        flex-direction: column;
+        >img{
+            width: 50%;
+        }
+    }
+    .content{
+        flex-direction: column;
+        >img{
+            width: 50%;;
+        }
+    }
+}
