@@ -1,0 +1,30 @@
+section{
+    margin: auto 0;
+}
+.op{
+    width: 50%;
+    background-color: #00b8d9ad;
+    border-radius: 10px;
+    margin: 0 auto 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+    padding: 30px;
+    >p::first-letter{
+        text-shadow: 2px 2px 2px #FF6F00;
+        font-size: 2em;
+        font-family: Georgia, serif;
+        float: left;
+        margin-right: 10px;
+    }
+    >img{
+        width: 100px;
+    }
+}
+@media screen and (max-width: 500px){
+    .op{
+        width: 80%;
+        flex-direction: column;
+    }
+}
