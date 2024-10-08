@@ -1,0 +1,44 @@
+.containerHeader{
+    width: 100%;
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    background-color: #272136;
+    padding: 25px 0;
+}
+h1{
+    font-size: 2rem;
+    color: white;
+}
+ul{
+    display: flex;
+    align-content: space-evenly;
+    >li{
+        color: #e6c7c7;
+        cursor: pointer;
+        padding: 10px 25px;
+        &::marker{
+            content: '';
+        }
+        &:hover{
+            background-color: #3d3252;
+        }
+    }
+}
+.selected{
+    border-bottom: 2px solid #FF6F00;
+}
+@media screen and (max-width: 500px){
+    .containerHeader{
+        flex-direction: column;
+        gap: 10px;
+    }
+    ul{
+        font-size: small;
+        >li{  
+            padding: 0px 5px;
+        }
+    }
+}
