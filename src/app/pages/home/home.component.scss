@@ -1,0 +1,67 @@
+@use "./../../../assets/styles/variables.scss";
+#homeContainer{
+    align-items: center;
+    align-content: center;
+}
+.main{
+    padding: 50px 0;
+    display: flex;
+    gap: 40px;
+    >img{
+        width: 25%;
+        background-size: conver;
+    }
+}
+#contTxtMain{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px 5px;
+}
+h1{
+    font-size: 3.4rem;
+    color: variables.$darkColor;
+    text-align: center;
+    text-shadow: 3px 3px 3px gray;
+}
+
+.welcome{
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    width: 40%;
+    margin: 0 auto 30px;
+}
+
+button{
+    cursor: pointer;
+    width: 50%;
+    padding: 10px 25px;
+    background-color: variables.$orange;
+    border: unset;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    box-shadow: 3px 3px 0 gray;
+}
+@media screen and (max-width: 500px){
+    .main{
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        >img{
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+    .welcome{
+        width: 90%;
+    }
+}
