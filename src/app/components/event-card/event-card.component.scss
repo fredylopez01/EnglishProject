@@ -1,0 +1,23 @@
+.eventCard{
+    width: 320px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    gap: 10px;
+    &:hover{
+        background-color: #685d7c85;
+    }
+    transition: background-color 0.5s ease-in-out;
+    padding: 10px;
+    border-radius: 10px;
+}
+p{
+    text-align: justify;
+}
+img{
+    width: 300px;
+    object-fit: cover;
+}

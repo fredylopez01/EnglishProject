@@ -1,0 +1,5 @@
+<div class="eventCard" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+    <h3 *ngIf="!isHovering">{{event.year}}: {{event.title}}</h3>
+    <p *ngIf="isHovering">{{event.description}}</p>
+    <img *ngIf="!isHovering" [src]="event.urlImage" alt="">
+  </div>
