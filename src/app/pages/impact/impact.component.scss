@@ -1,0 +1,43 @@
+section{
+    display: flex;
+    padding: 20px;
+}
+#firstP{
+    width: 100%;
+    margin: 0 auto;
+    background-image: url("./../../../assets/img/homeb.jpg");
+    background-size: cover;
+    background-position: center;
+    >h1{
+        color: white;
+        box-shadow: 2px 2px 2px gray;
+        background-color: #00B8D9;
+        font-size: 45px;
+        padding: 10px 10px 0px;
+    }
+    >h2{
+        background-color: #00B8D9;
+        color: white;
+        display: inline-block;
+        padding: 0 10px 10px;
+    }
+}
+#secondS,
+#thirdS,
+#fourthS,
+#fifthS{
+    text-align: justify;
+    width: 70%;
+    margin: 30px auto;
+}
+@media screen and (max-width: 500px){
+    section{
+        flex-wrap: wrap;
+    }
+    #secondS,
+    #thirdS,
+    #fourthS,
+    #fifthS{
+        width: 100%;
+    }
+}
